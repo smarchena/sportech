@@ -9,6 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./site/css/styles.css">
 
 </head>
 
@@ -29,7 +30,7 @@
 
                 <!-- Icono de usuario -->
                 <a href="" class="text-dark">
-                    <i class="my-class bi bi-person"></i>
+                    <i class="my-class bi bi-person p-2"></i>
                 </a>
 
                 <!-- Icono de carrito -->
@@ -52,18 +53,143 @@
         </div>
     </div>
     <main>
-        <div class="d-flex flex-column align-items-left bg-info px-4">
-            <div class="d-flex">
+        <div class="d-flex flex-column align-items-left bg-info px-4 bg-info-subtle">
+            <div class="d-flex bg-info-subtle">
                 <p class="text-center"></p>
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <div id="bannerHeader" class="w-100 py-4" style="border: 1px solid black">
-                <h3 class="text-center text-black fs-1">BLACK DAYS</h3>
-                <p class="text-center text-black fs-5">50% OFF ALL PRODUCTS</p>
+            <div id="bannerHeader" class="w-100 py-4 bg-black">
+                <h3 class="text-center text-white fs-1">BLACK DAYS</h3>
+                <p class="text-center text-white fs-5 text-primary text-opacity-75">50% OFF ALL PRODUCTS</p>
+            </div>
+        </div>
+
+        <!-- CARRUSEL -->
+
+        <div class="p-5 pb-1 pt-3">
+            <div class="p-5 pb-1 pt-3 px-5">
+                <div id="carouselOfertas" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="carouselProductos">
+
+                        <!-- SLIDE 1 -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-12 col-md-4">
+                                    <div class="card mx-auto p-3">
+                                        <img src="./site/img/botas.jpg" class="card-img-top" alt="Botas">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Botas</h5>
+                                            <p class="card-text">$50.000</p>
+                                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="card mx-auto p-3">
+                                        <img src="./site/img/chaqueta.jpg" class="card-img-top" alt="Chaqueta">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Chaqueta</h5>
+                                            <p class="card-text">$70.000</p>
+                                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4">
+                                    <div class="card mx-auto p-3">
+                                        <img src="./site/img/short-udry.jpg" class="card-img-top" alt="Short Udry">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Short Udry</h5>
+                                            <p class="card-text">$70.000</p>
+                                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 (ejemplo, opcional) -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-12 col-md-4">
+                                    <div class="card mx-auto">
+                                        <img src="./site/img/tenis.jpg" class="card-img-top" alt="Tenis">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Tenis</h5>
+                                            <p class="card-text">$120.000</p>
+                                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card mx-auto">
+                                        <img src="./site/img/pantalon.jpg" class="card-img-top" alt="Pantalón">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Pantalón</h5>
+                                            <p class="card-text">$90.000</p>
+                                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="card mx-auto">
+                                        <img src="./site/img/camiseta.jpg" class="card-img-top" alt="Camiseta">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Camiseta</h5>
+                                            <p class="card-text">$60.000</p>
+                                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- CONTROLES -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next bs-body-bg" type="button" data-bs-target="#carouselOfertas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bs-body-bg" aria-hidden="true"></span>
+                        <span class="visually-hidden bs-body-bg">Next</span>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
+
+    <footer class="container-fluid bg-body-tertiary" id="footer">
+        <div class="navbar navbar-light bg-dark shadow-sm d-flex navbar bg-body-tertiary"
+            style=" border: 1px solid black;">
+            <div class="container-fluid px-5" id="colorFooter">
+
+                <a class="navbar-brand fw-bold text-uppercase mt-0" href="./home.html">
+                    <img src="./site/img/frameWhite.png" alt="Sportech" class="d-inline-block align-text-top">
+                </a>
+
+                <div class="mx-auto p-2">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-mt-3 bg-body-tertiary">
+                        <a href="#" class="text-black mx-1 text-decoration-none">CUENTA </a>
+                        <div class="m-2 d-inline-block footerMenu"></div>
+                        <a href="#" class="text-black mx-1 px-1 text-decoration-none">TERMINOS DE USO </a>
+                        <div class="m-2 d-inline-block footerMenu"></div>
+                        <a href="#" class="text-black mx-1 px-1 text-decoration-none">POLÍTICAS DE PRIVACIDAD</a>
+                        <div class="m-2 d-inline-block footerMenu"></div>
+                        <a href="#" class="text-black mx-1 px-1 text-decoration-none">ENVÍOS Y DEVOLUCIONES </a>
+                    </nav>
+                    <div class="mx-auto p-2">
+                        <p class="text-center">&copy; 2024 SPORTECH Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 </body>

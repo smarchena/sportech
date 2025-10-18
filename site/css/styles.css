@@ -1,0 +1,28 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;   
+  height: 3rem;  
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: linear-gradient(to right, rgba(61, 122, 124, 0.85), transparent);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-next {
+  background: linear-gradient(to left, rgba(61, 122, 124, 0.85), transparent);
+}
+
+.btn-primary{
+    background-color: #055160;  
+    border-color: #055160;      
+}
+.btn-primary:hover{
+     background-color: #0DCAF0;
+     border-color: #0DCAF0;
+}
