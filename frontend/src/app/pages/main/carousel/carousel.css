@@ -1,0 +1,13 @@
+.button {
+background-color: #055159;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
