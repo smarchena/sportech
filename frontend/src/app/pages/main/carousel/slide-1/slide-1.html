@@ -1,0 +1,23 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3 justify-content-center">
+
+  @for (cards of boots; track cards) {
+  <div class="col">
+    <div class="card h-100 shadow-sm ">
+
+      <figure class="px-13 pt-3">
+        <img [src]="cards.url" [alt]="cards.title" class="img-fluid" />
+      </figure>
+
+      <div class="card-body items-center text-center">
+        <h2 class="card-title justify-content-center">{{ cards.title }}</h2>
+        <p class="card-text justify-content-center align-text-center">{{ cards.description }}</p>
+        <div class="card-actions">
+          <button class="btn btn-primary button">Add to cart</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  }
+
+</div>
