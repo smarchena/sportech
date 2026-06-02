@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Boots } from '../../../../interfaces/cards.interfaces';
+import { Clothes } from '../../../../interfaces/cards.interfaces';
 
 @Component({
   selector: 'carousel-slide-3',
@@ -9,7 +9,7 @@ import { Boots } from '../../../../interfaces/cards.interfaces';
 })
 export class Slide3 {
 
-  boots: Boots[] = [
+  clothes: Clothes[] = [
       {
         title: 'Botas Techwear',
         url: 'https://cyber-techwear.com/cdn/shop/products/Black_fashion-women-chunky-platform-motorcycle_variants-0_27bedfeb-82b2-402e-bb91-d6914f468815.jpg?v=1672315449',

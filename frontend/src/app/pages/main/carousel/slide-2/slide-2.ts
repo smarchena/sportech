@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Boots } from '../../../../interfaces/cards.interfaces';
+import { Clothes} from '../../../../interfaces/cards.interfaces';
 
 @Component({
   selector: 'carousel-slide-2',
@@ -8,12 +8,12 @@ import { Boots } from '../../../../interfaces/cards.interfaces';
   styleUrl: './slide-2.css',
 })
 export class Slide2 {
-    boots: Boots[] = [
+    clothes: Clothes[] = [
       {
-        title: 'Botas Techwear',
-        url: 'https://cyber-techwear.com/cdn/shop/products/Black_fashion-women-chunky-platform-motorcycle_variants-0_27bedfeb-82b2-402e-bb91-d6914f468815.jpg?v=1672315449',
-        description: 'Salga con estilo esta temporada y parezca que ha salido de las páginas de una revista de moda con Tech Wear Boots Black. ',
-        precio: 500000
+        title: 'Angels Y2K Graphic Tees',
+        url: 'https://cyber-techwear.com/cdn/shop/files/angels-print-mens-y2k-graphic-tees_1.jpg?v=1775152267',
+        description: 'Vibrante, expresiva y llena de personalidad, la camiseta gráfica Angels Print para hombre estilo Y2K aporta una energía artística y desenfadada a la moda urbana moderna.',
+        precio: 216000
       },
       {
         title: 'Cyberpunk Techwear',
