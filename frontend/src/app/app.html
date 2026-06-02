@@ -1,8 +1,13 @@
-<app-header></app-header>
+<div class="min-h-screen flex flex-col">
 
-<router-outlet>
-  <app-main></app-main>
-</router-outlet>
+  <app-header></app-header>
 
-<div class="flex-1 grow"></div>
-<app-footer></app-footer>
+  <main class="flex-1">
+    <router-outlet>
+      <app-main></app-main>
+    </router-outlet>
+  </main>
+
+  <div class="flex-1 grow"></div>
+  <app-footer></app-footer>
+</div>
